@@ -1,0 +1,13 @@
+---
+- name: Installation des serveurs web
+  hosts: web
+  remote_user: root
+  vars:
+    user:
+    domains: 
+      - ip-project
+
+  roles:
+    - utils
+    - nginx
+...
